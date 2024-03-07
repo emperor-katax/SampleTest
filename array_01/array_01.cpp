@@ -1,14 +1,16 @@
 #include <iostream>
 #include <string>
 using namespace std;
+void checkArray(int arr[]) {
+	arr[0] = 85;
+}
 //
-int main(){ 
-
-	// A //////////////////////////////
-	cout << " ---------- array ----------- " << endl;
-
-
-//	cout << "\n --------- end of code ------------ " << endl;
+int main() {
+	int anArray[4] = { 1,2,2,2 };
+	int anArray_02[4];
+	cout << anArray[0] << " --A-- \n";
+	checkArray(anArray);
+	cout << anArray[0] << " --B-- default: arrays are passing by reference. \n";
 }
 
 // C++ arrays
